@@ -24,7 +24,6 @@ color[position][no]=0;
     }else{ elmnt.style.fill='#eeffee80';
  color[position][no]=1;}
     }
-    
 
  
 
