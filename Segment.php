@@ -4,8 +4,10 @@ class Segment {
 
     var $trojuhelniky;
     var $fill;
-
+    var $pozice;
+    
     function Segment($pozice, $obrazek) {
+        $this->pozice=$pozice;
         require './source/connect2.php';
 
         $sql = "SELECT * FROM obrazekTest WHERE jmeno='$obrazek'";
@@ -19,8 +21,8 @@ class Segment {
 
     function Vypis() {
         for ($x = 0; $x < 8; $x++) {
-            if ($this->trojuhelniky[$x] == 1) {$this->fill[$x] = "#FEF";}
-            else {$this->fill[$x] = "#010";}
+            if ($this->trojuhelniky[$x] == 1) {$this->fill[$x] = "#FFEEFF80";}
+            else {$this->fill[$x] = "#00220080";}
         }
         echo '<polygon points="0,0 0,60 60,0" class="segment segment-1-1-1"
                  style="fill:'.$this->fill[0].';" />
@@ -39,5 +41,16 @@ class Segment {
         <polygon points="60,60 120,60 60,120" class="segment segment-1-1-8"
                  style="fill:'.$this->fill[7].';" />';
     }
-
+    
+function Vysledek(){
+    $row;
+require './source/connect2.php';
+         $jmenoHry='testHry';
+        $sql = "SELECT * FROM hraTest WHERE jmenoHry='$jmenoHry'";
+        $result = $conn->query($sql);
+       $row = $result->fetch_array();
+          $conn->close(); 
+          
+          echo $row[($this->pozice+17)];
+}
 }

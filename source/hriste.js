@@ -19,9 +19,9 @@ var color=[[1,1,1,1,1,1,1,1],
 
 function changeColor(elmnt, no, position){
     if(color[position][no]==1){
- elmnt.style.fill='#020';
+ elmnt.style.fill='#00220080';
 color[position][no]=0;
-    }else{ elmnt.style.fill='#EFE';
+    }else{ elmnt.style.fill='#eeffee80';
  color[position][no]=1;}
     }
  

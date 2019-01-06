@@ -3,4 +3,12 @@
 .ctverec{width: 120px;height: 120px;display: inline; }
 .plocha{text-align: center;}
 
+/*tabulka prikadu*/
+.priklady td {
+    height: 120px;
+    width: 120px;
+
+}
+
+
 
