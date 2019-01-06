@@ -66,85 +66,85 @@
     <div id="menu2" class="tab-pane fade plocha">
         <h3>návrh hry</h3><br>
         <hr>
-      <form>
+      <form action="source/hra.php" method="post">
           <div class="form-group">
     <label for="jmeno_obrazku">jméno obrázku</label>
-    <input type="jmenoObrazku" class="form-control" id="jmenoObrazku">
+    <input name="obrazek" class="form-control" id="jmenoObrazku">
       </div>
   <div class="form-group">
     <label for="priklad1">příklad 1</label>
-    <input type="priklad1" class="form-control" id="priklad1" placeholder="příklad">
-    <input type="vysledek1" class="form-control" id="vysledek1" placeholder="výsledek">
+    <input name="priklad1" class="form-control" id="priklad1" placeholder="příklad">
+    <input name="vysledek1" class="form-control" id="vysledek1" placeholder="výsledek">
   </div>
             <div class="form-group">
     <label for="priklad2">příklad 2</label>
-    <input type="priklad2" class="form-control" id="priklad2" placeholder="příklad">
-    <input type="vysledek2" class="form-control" id="vysledek2" placeholder="výsledek">
+    <input name="priklad2" class="form-control" id="priklad2" placeholder="příklad">
+    <input name="vysledek2" class="form-control" id="vysledek2" placeholder="výsledek">
   </div>
             <div class="form-group">
     <label for="priklad3">příklad 3</label>
-    <input type="priklad3" class="form-control" id="priklad3" placeholder="příklad">
-    <input type="vysledek3" class="form-control" id="vysledek3" placeholder="výsledek">
+    <input name="priklad3" class="form-control" id="priklad3" placeholder="příklad">
+    <input name="vysledek3" class="form-control" id="vysledek3" placeholder="výsledek">
   </div>
             <div class="form-group">
     <label for="priklad4">příklad 4</label>
-    <input type="priklad4" class="form-control" id="priklad4" placeholder="příklad">
-    <input type="vysledek4" class="form-control" id="vysledek4" placeholder="výsledek">
+    <input name="priklad4" class="form-control" id="priklad4" placeholder="příklad">
+    <input name="vysledek4" class="form-control" id="vysledek4" placeholder="výsledek">
   </div>
             <div class="form-group">
     <label for="priklad5">příklad 5</label>
-    <input type="priklad5" class="form-control" id="priklad5" placeholder="příklad">
-    <input type="vysledek5" class="form-control" id="vysledek5" placeholder="výsledek">
+    <input name="priklad5" class="form-control" id="priklad5" placeholder="příklad">
+    <input name="vysledek5" class="form-control" id="vysledek5" placeholder="výsledek">
   </div>
           <div class="form-group">
     <label for="priklad6">příklad 6</label>
-    <input type="priklad6" class="form-control" id="priklad6" placeholder="příklad">
-    <input type="vysledek6" class="form-control" id="vysledek6" placeholder="výsledek">
+    <input name="priklad6" class="form-control" id="priklad6" placeholder="příklad">
+    <input name="vysledek6" class="form-control" id="vysledek6" placeholder="výsledek">
   </div>
             <div class="form-group">
     <label for="priklad7">příklad 7</label>
-    <input type="priklad7" class="form-control" id="priklad7" placeholder="příklad">
-    <input type="vysledek7" class="form-control" id="vysledek7" placeholder="výsledek">
+    <input name="priklad7" class="form-control" id="priklad7" placeholder="příklad">
+    <input name="vysledek7" class="form-control" id="vysledek7" placeholder="výsledek">
   </div>
             <div class="form-group">
     <label for="priklad8">příklad 8</label>
-    <input type="priklad8" class="form-control" id="priklad8" placeholder="příklad">
-    <input type="vysledek8" class="form-control" id="vysledek8" placeholder="výsledek">
+    <input name="priklad8" class="form-control" id="priklad8" placeholder="příklad">
+    <input name="vysledek8" class="form-control" id="vysledek8" placeholder="výsledek">
   </div>
             <div class="form-group">
     <label for="priklad9">příklad 9</label>
-    <input type="priklad9" class="form-control" id="priklad9" placeholder="příklad">
-    <input type="vysledek9" class="form-control" id="vysledek9" placeholder="výsledek">
+    <input name="priklad9" class="form-control" id="priklad9" placeholder="příklad">
+    <input name="vysledek9" class="form-control" id="vysledek9" placeholder="výsledek">
   </div>
             <div class="form-group">
     <label for="priklad10">příklad 10</label>
-    <input type="priklad10" class="form-control" id="priklad10" placeholder="příklad">
-    <input type="vysledek10" class="form-control" id="vysledek10" placeholder="výsledek">
+    <input name="priklad10" class="form-control" id="priklad10" placeholder="příklad">
+    <input name="vysledek10" class="form-control" id="vysledek10" placeholder="výsledek">
   </div>
           <div class="form-group">
     <label for="priklad11">příklad 11</label>
-    <input type="priklad11" class="form-control" id="priklad11" placeholder="příklad">
-    <input type="vysledek11" class="form-control" id="vysledek11" placeholder="výsledek">
+    <input name="priklad11" class="form-control" id="priklad11" placeholder="příklad">
+    <input name="vysledek11" class="form-control" id="vysledek11" placeholder="výsledek">
   </div>
             <div class="form-group">
     <label for="priklad12">příklad 12</label>
-    <input type="priklad12" class="form-control" id="priklad12" placeholder="příklad">
-    <input type="vysledek12" class="form-control" id="vysledek12" placeholder="výsledek">
+    <input name="priklad12" class="form-control" id="priklad12" placeholder="příklad">
+    <input name="vysledek12" class="form-control" id="vysledek12" placeholder="výsledek">
   </div>
             <div class="form-group">
     <label for="priklad13">příklad 13</label>
-    <input type="priklad13" class="form-control" id="priklad13" placeholder="příklad">
-    <input type="vysledek13" class="form-control" id="vysledek13" placeholder="výsledek">
+    <input name="priklad13" class="form-control" id="priklad13" placeholder="příklad">
+    <input name="vysledek13" class="form-control" id="vysledek13" placeholder="výsledek">
   </div>
             <div class="form-group">
     <label for="priklad14">příklad 14</label>
-    <input type="priklad14" class="form-control" id="priklad14" placeholder="příklad">
-    <input type="vysledek14" class="form-control" id="vysledek14" placeholder="výsledek">
+    <input name="priklad14" class="form-control" id="priklad14" placeholder="příklad">
+    <input name="vysledek14" class="form-control" id="vysledek14" placeholder="výsledek">
   </div>
             <div class="form-group">
     <label for="priklad15">příklad 15</label>
-    <input type="priklad15" class="form-control" id="priklad15" placeholder="příklad">
-    <input type="vysledek15" class="form-control" id="vysledek15" placeholder="výsledek">
+    <input name="priklad15" class="form-control" id="priklad15" placeholder="příklad">
+    <input name="vysledek15" class="form-control" id="vysledek15" placeholder="výsledek">
   </div>
           <hr>
   <button type="submit" class="btn btn-default">ulož hru</button>
