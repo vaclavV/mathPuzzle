@@ -7,7 +7,24 @@
 .priklady td {
     height: 120px;
     width: 120px;
+}
 
+span.priklad {
+    padding: 20px;
+    position: relative;
+    bottom: 25px;
+    font-size: 180%;
+    font-weight: bold;
+}
+
+.jumbotron {
+    background: url(http://mathpuzzle.gevo.cz/source/bg-jumbo.jpg);
+    background-size: cover;
+}
+
+text {
+    font-weight: bold;
+    font-size: 130%;
 }
 
 

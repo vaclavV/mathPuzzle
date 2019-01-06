@@ -9,11 +9,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="source/MPstyle.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     </head>
     <body>
         <div class="jumbotron text-center">
             <h1>matematický trenažér</h1>
-            <p>nevšimneš si, že se učíš</p> 
+            <p>nevšimneš si, že se učíš <a href="#" data-toggle="tooltip" data-placement="top" title="najdi správný výsledek klikáním myši na trojúhelníky u příkladu nakresli tvar"><i class="fas fa-info-circle"></i></a>
+</p> 
         </div>
 
         <div class="container">
