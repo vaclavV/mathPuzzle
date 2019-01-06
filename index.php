@@ -20,21 +20,21 @@
             <div class="row">
                 <div class="col-sm-12, plocha">
 
-                    <svg width="120" height="120" class="segment" id=""></svg>
-                    <svg width="120" height="120" class="segment" id=""></svg>
-                    <svg width="120" height="120" class="segment" id=""></svg>
-                    <svg width="120" height="120" class="segment" id=""></svg>
-                    <svg width="120" height="120" class="segment" id=""></svg><br>
-                    <svg width="120" height="120" class="segment" id=""></svg>
-                    <svg width="120" height="120" class="segment" id=""></svg>
-                    <svg width="120" height="120" class="segment" id=""></svg>
-                    <svg width="120" height="120" class="segment" id=""></svg>
-                    <svg width="120" height="120" class="segment" id=""></svg><br>
-                    <svg width="120" height="120" class="segment" id=""></svg>
-                    <svg width="120" height="120" class="segment" id=""></svg>
-                    <svg width="120" height="120" class="segment" id=""></svg>
-                    <svg width="120" height="120" class="segment" id=""></svg>
-                    <svg width="120" height="120" class="segment" id=""></svg><br>
+                    <svg width="120" height="120" class="segment" id=""><?php include './source/funkceMP.php';  drawSegment(1);?></svg>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(2);?></svg>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(3);?></svg>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(4);?></svg>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(5);?></svg><br>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(6);?></svg>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(7);?></svg>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(8);?></svg>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(9);?></svg>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(10);?></svg><br>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(11);?></svg>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(12);?></svg>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(13);?></svg>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(14);?></svg>
+                    <svg width="120" height="120" class="segment" id=""><?php drawSegment(15);?></svg><br>
                 </div></div>
             <div class="row">
                 <div class="col-sm-4">
@@ -130,6 +130,6 @@
                 </div>
             </div>
         </div>
-       
+        <script src="source/hriste.js"></script>    
     </body>
 </html>

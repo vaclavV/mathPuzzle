@@ -1,14 +1,28 @@
 
 
     
-var color=[1,1,1,1,1,1,1,1];
+var color=[[1,1,1,1,1,1,1,1],
+    [1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1],
+[1,1,1,1,1,1,1,1]];
 
-function changeColor(elmnt, no){
-    if(color[no]==1){
- elmnt.style.fill='#000';
-color[no]=0;
+function changeColor(elmnt, no, position){
+    if(color[position][no]==1){
+ elmnt.style.fill='#020';
+color[position][no]=0;
     }else{ elmnt.style.fill='#EFE';
- color[no]=1;}
+ color[position][no]=1;}
     }
  
 
