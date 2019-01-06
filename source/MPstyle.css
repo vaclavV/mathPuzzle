@@ -1,0 +1,31 @@
+.segment{stroke:#00000024;stroke-width:1}
+
+.ctverec{width: 120px;height: 120px;display: inline; }
+.plocha{text-align: center;}
+
+/*tabulka prikadu*/
+.priklady td {
+    height: 120px;
+    width: 120px;
+}
+
+span.priklad {
+    padding: 20px;
+    position: relative;
+    bottom: 25px;
+    font-size: 180%;
+    font-weight: bold;
+}
+
+.jumbotron {
+    background: url(http://mathpuzzle.gevo.cz/source/bg-jumbo.jpg);
+    background-size: cover;
+}
+
+text {
+    font-weight: bold;
+    font-size: 130%;
+}
+
+
+
