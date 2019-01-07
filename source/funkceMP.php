@@ -1,13 +1,26 @@
 <?php
 
+    class hra {    
+   var $jmenoHry="testHry";  
+public function vyberHry(){
+        require './source/connect2.php';
+    
 
+       
+        $sql = "SELECT `jmenoHry` FROM `hraTest` WHERE `aktivni`=1";
+        $result = $conn->query($sql);
+    $this->jmenoHry = $result->fetch_array()[0];
+
+          $conn->close(); 
+     
+    }
   
 
 function drawSegment($noSegment){
-    $row;
+ 
     require './source/connect2.php';
-         $jmenoHry='testHry';
-        $sql = "SELECT * FROM hraTest WHERE jmenoHry='$jmenoHry'";
+    
+      $sql = "SELECT * FROM hraTest WHERE jmenoHry='$this->jmenoHry'";
         $result = $conn->query($sql);
        $row = $result->fetch_array();
 
@@ -41,5 +54,6 @@ style="fill:#eeffee80;" />';$noTriangle++;
  echo'<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="60,60 120,60 60,120" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';
 }
                 
-                
+    }  
+ 
 

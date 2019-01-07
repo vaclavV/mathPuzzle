@@ -25,7 +25,8 @@
     <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home">jak na to</a></li>
     <li><a data-toggle="tab" href="#menu1">příprava obrázku</a></li>
-    <li><a data-toggle="tab" href="#menu2">příprava hry</a></li>   
+    <li><a data-toggle="tab" href="#menu2">příprava hry</a></li>
+    <li><a data-toggle="tab" href="#menu3">Výběr hry</a></li>   
   </ul>
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
@@ -33,6 +34,7 @@
       <ul>
           <br><li>Navrhněte obrázek. Zadejte jednoslovný název obrázku a klikáním na trojúhelníky je obarvíte.<br> Stejným způsobem jako se hraje samotná hra. Pak už jen tlačítkem uložíte.</li>
           <br><li>Napište zadání příkladů a výsledky do příslušných formulářových polí.<br> Vyberte jméno obrázku hry a je hotovo. </li>
+          <br><li>vyberte hru</li>
       </ul>
     </div>
     <div id="menu1" class="tab-pane fade plocha">
@@ -150,6 +152,9 @@
   <button type="submit" class="btn btn-default">ulož hru</button>
 </form>
     </div>
+       <div id="menu3" class="tab-pane fade plocha">
+      <h3>výběr hry</h3>
+      
       </div>
 </div>
                 </div>
