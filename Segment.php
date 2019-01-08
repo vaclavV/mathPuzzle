@@ -42,10 +42,10 @@ class Segment {
                  style="fill:'.$this->fill[7].';" />';
     }
     
-function Vysledek(){
+function Vysledek($jmenoHry){
     $row;
 require './source/connect2.php';
-         $jmenoHry='testHry';
+        
         $sql = "SELECT * FROM hraTest WHERE jmenoHry='$jmenoHry'";
         $result = $conn->query($sql);
        $row = $result->fetch_array();

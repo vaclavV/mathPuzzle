@@ -1,7 +1,8 @@
 <?php
 
     class hra {    
-   var $jmenoHry="testHry";  
+   var $jmenoHry="testHry"; 
+   var $poradi;
 public function vyberHry(){
         require './source/connect2.php';
     
@@ -53,6 +54,24 @@ style="fill:#eeffee80;" />';$noTriangle++;
  echo'<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="120,60 60,120 120,120" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
  echo'<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="60,60 120,60 60,120" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';
 }
+
+function poradi() {
+
+        $cisla;
+        for ($n = 0; $n < 15; $n++) {
+            $cisla[$n] = ($n + 1);
+        }
+        
+        for ($i = 14; $i >= 0; $i--) {
+            $nahodne = mt_rand(0, $i);
+            $this->poradi[$i] = $cisla[$nahodne];
+            for ($j = $nahodne; $j < count($cisla); $j++) {
+                $cisla[$j] = $cisla[($j + 1)];
+            }
+        }
+        
+    }
+
                 
     }  
  
