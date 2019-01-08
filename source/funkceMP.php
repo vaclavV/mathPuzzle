@@ -2,19 +2,20 @@
 
     class hra {    
    var $jmenoHry="testHry"; 
+   var $jemnoObrazku;
    var $poradi;
 public function vyberHry(){
         require './source/connect2.php';
     
 
        
-        $sql = "SELECT `jmenoHry` FROM `hraTest` WHERE `aktivni`=1";
+        $sql = "SELECT `jmenoHry`, `obrazek` FROM `hraTest` WHERE `aktivni`=1";
         $result = $conn->query($sql);
     $this->jmenoHry = $result->fetch_array()[0];
+    $this->jemnoObrazku=$result->fetch_array()[1];
 
           $conn->close(); 
-     
-    }
+     }
   
 
 function drawSegment($noSegment){

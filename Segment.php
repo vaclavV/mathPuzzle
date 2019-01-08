@@ -36,9 +36,9 @@ class Segment {
                  style="fill:'.$this->fill[4].';" />
         <polygon points="0,60 60,120 60,60" class="segment segment-1-1-6"
                  style="fill:'.$this->fill[5].';" />
-        <polygon points="120,60 60,120 120,120" class="segment segment-1-1-7"
+        <polygon points="60,60 120,60 60,120" class="segment segment-1-1-7"
                  style="fill:'.$this->fill[6].';" />
-        <polygon points="60,60 120,60 60,120" class="segment segment-1-1-8"
+        <polygon points="120,60 60,120 120,120" class="segment segment-1-1-8"
                  style="fill:'.$this->fill[7].';" />';
     }
     
