@@ -1,10 +1,10 @@
 <!DOCTYPE html>
->
+
 <html>
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>matematický trenažer</title>
+        <title>admin: matematický trenažer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -67,12 +67,21 @@
     </div>
     <div id="menu2" class="tab-pane fade plocha">
         <h3>návrh hry</h3><br>
+         <?php
+        include './source/adminUtil.php';
+        $aktualniObrazky = new adminUtil();
+        $aktualniObrazky->obrazky();
+        ?>
         <hr>
       <form action="source/hra.php" method="post">
           <div class="form-group">
+    <label for="jmenoHry">jméno hry</label>
+    <input name="jmenoHry" class="form-control" id="jmenoHry" placeholder="jméno hry">
+  </div>
+          <div class="form-group">
     <label for="jmeno_obrazku">jméno obrázku</label>
-    <input name="obrazek" class="form-control" id="jmenoObrazku">
-      </div>
+    <select class="form-control" name="obrazek"><?php for($i=0;$i<count($aktualniObrazky->obrazky);$i++){echo '<option value = "'. $aktualniObrazky->obrazky[$i] . '">'. $aktualniObrazky->obrazky[$i] . '</option>' ;}?></select>
+          </div><hr>
   <div class="form-group">
     <label for="priklad1">příklad 1</label>
     <input name="priklad1" class="form-control" id="priklad1" placeholder="příklad">
@@ -154,7 +163,22 @@
     </div>
        <div id="menu3" class="tab-pane fade plocha">
       <h3>výběr hry</h3>
-      
+      <hr>
+       <?php
+        $aktualniHraVybrat = new adminUtil(); 
+        $aktualniHraVybrat->nastaveniHry();
+        ?>
+        <form action="source/vyberHru.php" method="post">
+            <div class="form-group">
+            <select class="form-control" name="vybranaHra"><?php for ($i = 0; $i < count($aktualniHraVybrat->hryNaVyber); $i++) {
+            echo '<option value = "' . $aktualniHraVybrat->hryNaVyber[$i] . '">' . $aktualniHraVybrat->hryNaVyber[$i] . '</option>';
+            } ?></select></div><br>
+            <button type = "submit" class = "btn btn-default">změň hru</button>
+
+        </form>
+      <?php $aktualniHraJmeno= new hra(); $aktualniHraJmeno->vyberHry();?>
+      <hr>
+      <strong>aktuální hra: <?php echo $aktualniHraJmeno->jmenoHry;?> </strong>
       </div>
 </div>
                 </div>
