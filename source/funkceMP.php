@@ -4,6 +4,7 @@
    var $jmenoHry="testHry"; 
    var $jemnoObrazku;
    var $poradi;
+   var $cisloSegmentu=0;
 public function vyberHry(){
         require './source/connect2.php';
     
@@ -27,11 +28,11 @@ function drawSegment($noSegment){
        $row = $result->fetch_array();
 
           $conn->close(); 
-          
+       
          
     $noTriangle=0;
-echo '<text x="15" y="45" fill="red">'.$row[($noSegment+2)].'</text>';
-echo '<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="0,0 0,60 60,0" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'"
+echo'<text x="15" y="45" fill="red">'.$row[($noSegment+2)].'</text>';
+echo'<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="0,0 0,60 60,0" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'"
 style="fill:#eeffee80;" />';$noTriangle++;                 
  echo'<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="0,60 60,60 60,0" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
  echo'<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="60,0 60,60 120,60" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
@@ -45,18 +46,20 @@ style="fill:#eeffee80;" />';$noTriangle++;
 function adminSegment($noSegment){
     
     $noTriangle=0;
-echo '<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="0,0 0,60 60,0" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'"
-style="fill:#eeffee80;" />';$noTriangle++;                 
- echo'<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="0,60 60,60 60,0" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
- echo'<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="60,0 60,60 120,60" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
- echo'<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="60,0 120,0 120,60" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
- echo'<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="0,60 0,120 60,120" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
- echo'<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="0,60 60,120 60,60" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
- echo'<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="120,60 60,120 120,120" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
- echo'<polygon onclick="changeColor(this, '.$noTriangle.', '.($noSegment-1).')" points="60,60 120,60 60,120" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';
+echo '<polygon onclick="setColor('. $this->cisloSegmentu . ',this, '.$noTriangle.', '.($noSegment-1).')" points="0,0 0,60 60,0" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
+ echo'<polygon onclick="setColor('. $this->cisloSegmentu . ',this, '.$noTriangle.', '.($noSegment-1).')" points="0,60 60,60 60,0" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
+ echo'<polygon onclick="setColor('. $this->cisloSegmentu . ',this, '.$noTriangle.', '.($noSegment-1).')" points="60,0 60,60 120,60" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
+ echo'<polygon onclick="setColor('. $this->cisloSegmentu . ',this, '.$noTriangle.', '.($noSegment-1).')" points="60,0 120,0 120,60" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
+ echo'<polygon onclick="setColor('. $this->cisloSegmentu . ',this, '.$noTriangle.', '.($noSegment-1).')" points="0,60 0,120 60,120" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
+ echo'<polygon onclick="setColor('. $this->cisloSegmentu . ',this, '.$noTriangle.', '.($noSegment-1).')" points="0,60 60,120 60,60" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
+ echo'<polygon onclick="setColor('. $this->cisloSegmentu . ',this, '.$noTriangle.', '.($noSegment-1).')" points="120,60 60,120 120,120" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';$noTriangle++;                 
+ echo'<polygon onclick="setColor('. $this->cisloSegmentu . ',this, '.$noTriangle.', '.($noSegment-1).')" points="60,60 120,60 60,120" class="segment segment-1-'.$noSegment.'-'.($noTriangle + 1).'" style="fill:#eeffee80;" />';
 }
-
-function poradi() {
+function idSegmentu(){
+    echo "segment".$this->cisloSegmentu;
+    $this->cisloSegmentu++;
+}
+        function poradi() {
 
         $cisla;
         for ($n = 0; $n < 15; $n++) {

@@ -39,32 +39,50 @@
     </div>
     <div id="menu1" class="tab-pane fade plocha">
       <h3>návrh obrázku</h3>
-      <div class="container">
- 
-  <form>
-    <div class="form-group">
-      <label for="nazev">Jméno obrázku:</label>
-      <input type="email" class="form-control" id="jemnoObrazku" placeholder="zadej jednoslovná název obrázku">
-    </div>
-    
-    <button type="submit" class="btn btn-default">Máš-li hotovo, ulož</button>
-  </form><br><hr></div>
-      <div> <svg width="120" height="120" class="segment" id=""><?php include './source/funkceMP.php'; $aktualniHra= new hra(); $aktualniHra->adminSegment(1);?></svg>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(2);?></svg>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(3);?></svg>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(4);?></svg>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(5);?></svg><br>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(6);?></svg>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(7);?></svg>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(8);?></svg>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(9);?></svg>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(10);?></svg><br>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(11);?></svg>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(12);?></svg>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(13);?></svg>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(14);?></svg>
-                    <svg width="120" height="120" class="segment" id=""><?php $aktualniHra->adminSegment(15);?></svg><br></div>
-    </div>
+                                <div class="container">
+
+                                    <form action="source/ulozObrazek.php"  method="post">
+                                        <div class="form-group">
+                                            <label for="nazev">Jméno obrázku:</label>
+                                            <input name="jmenoObrazku" type="text" class="form-control" id="jemnoObrazku" placeholder="zadej jednoslovná název obrázku">
+                                            <input type="hidden" id="s1" name="segment1" value="11111111">
+                                            <input type="hidden" id="s2" name="segment2" value="11111111">
+                                            <input type="hidden" id="s3" name="segment3" value="11111111">
+                                            <input type="hidden" id="s4" name="segment4" value="11111111">
+                                            <input type="hidden" id="s5" name="segment5" value="11111111">
+                                            <input type="hidden" id="s6" name="segment6" value="11111111">
+                                            <input type="hidden" id="s7" name="segment7" value="11111111">
+                                            <input type="hidden" id="s8" name="segment8" value="11111111">
+                                            <input type="hidden" id="s9" name="segment9" value="11111111">
+                                            <input type="hidden" id="s10" name="segment10" value="11111111">
+                                            <input type="hidden" id="s11" name="segment11" value="11111111">
+                                            <input type="hidden" id="s12" name="segment12" value="11111111">
+                                            <input type="hidden" id="s13" name="segment13" value="11111111">
+                                            <input type="hidden" id="s14" name="segment14" value="11111111">
+                                            <input type="hidden" id="s15" name="segment15" value="11111111">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-default">Máš-li hotovo, ulož</button>
+                                    </form><br><hr></div>
+                                <div>
+                                    <?php include './source/funkceMP.php';
+                                    $aktualniHra = new hra(); ?>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(1); ?></svg>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(2); ?></svg>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(3); ?></svg>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(4); ?></svg>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(5); ?></svg><br>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(6); ?></svg>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(7); ?></svg>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(8); ?></svg>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(9); ?></svg>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(10); ?></svg><br>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(11); ?></svg>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(12); ?></svg>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(13); ?></svg>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(14); ?></svg>
+                                    <svg width="120" height="120" class="segment" id="<?php $aktualniHra->idSegmentu();?>"><?php $aktualniHra->adminSegment(15); ?></svg><br></div>
+ </div>
     <div id="menu2" class="tab-pane fade plocha">
         <h3>návrh hry</h3><br>
          <?php
