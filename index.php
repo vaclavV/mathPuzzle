@@ -43,31 +43,31 @@
             <div class="row">
                 <div class="col-sm-4">
                     <svg width="120" height="120" class="segment" id=""> 
-                    <?php include './Segment.php'; $aktualniHra->poradi()?>
+                    <?php include './Segment.php'; $aktualniHra->poradi(); ?>
                     <?php
-                    $segment1 = new Segment($aktualniHra->poradi[0], 'test');
+                    $segment1 = new Segment($aktualniHra->poradi[0], $aktualniHra->jemnoObrazku);
                     $segment1->Vypis();
                     ?></svg>
                     <span class="priklad"><?php $segment1->Vysledek($aktualniHra->jmenoHry);?></span><br>
                     <svg width="120" height="120" class="segment" id="">
                     <?php
-                    $segment2 = new Segment($aktualniHra->poradi[1], 'test');
+                    $segment2 = new Segment($aktualniHra->poradi[1], $aktualniHra->jemnoObrazku);
                     $segment2->Vypis();
                     ?>
                     </svg>
                     <span class="priklad"><?php $segment2->Vysledek($aktualniHra->jmenoHry);?></span><br>
                     <svg width="120" height="120" class="segment" id=""><?php
-                    $segment3 = new Segment($aktualniHra->poradi[2], 'test');
+                    $segment3 = new Segment($aktualniHra->poradi[2], $aktualniHra->jemnoObrazku);
                     $segment3->Vypis();
                     ?></svg>
                     <span class="priklad"><?php $segment3->Vysledek($aktualniHra->jmenoHry);?></span><br>
                     <svg width="120" height="120" class="segment" id=""><?php
-                    $segment4 = new Segment($aktualniHra->poradi[3], 'test');
+                    $segment4 = new Segment($aktualniHra->poradi[3], $aktualniHra->jemnoObrazku);
                     $segment4->Vypis();
                     ?></svg>
                     <span class="priklad"><?php $segment4->Vysledek($aktualniHra->jmenoHry);?></span><br>
                     <svg width="120" height="120" class="segment" id=""><?php
-                    $segment5 = new Segment($aktualniHra->poradi[4], 'test');
+                    $segment5 = new Segment($aktualniHra->poradi[4], $aktualniHra->jemnoObrazku);
                     $segment5->Vypis();
                     ?></svg>
                     <span class="priklad"><?php $segment5->Vysledek($aktualniHra->jmenoHry);?></span><br>
@@ -75,29 +75,29 @@
                 <div class="col-sm-4">
                    <svg width="120" height="120" class="segment" id=""> 
                     <?php
-                    $segment6 = new Segment($aktualniHra->poradi[5], 'test');
+                    $segment6 = new Segment($aktualniHra->poradi[5], $aktualniHra->jemnoObrazku);
                     $segment6->Vypis();
                     ?></svg>
                     <span class="priklad"><?php $segment6->Vysledek($aktualniHra->jmenoHry);?></span><br>
                     <svg width="120" height="120" class="segment" id="">
                     <?php
-                    $segment7 = new Segment($aktualniHra->poradi[6], 'test');
+                    $segment7 = new Segment($aktualniHra->poradi[6], $aktualniHra->jemnoObrazku);
                     $segment7->Vypis();
                     ?>
                     </svg>
                     <span class="priklad"><?php $segment7->Vysledek($aktualniHra->jmenoHry);?></span><br>
                     <svg width="120" height="120" class="segment" id=""><?php
-                    $segment8 = new Segment($aktualniHra->poradi[7], 'test');
+                    $segment8 = new Segment($aktualniHra->poradi[7], $aktualniHra->jemnoObrazku);
                     $segment8->Vypis();
                     ?></svg>
                     <span class="priklad"><?php $segment8->Vysledek($aktualniHra->jmenoHry);?></span><br>
                     <svg width="120" height="120" class="segment" id=""><?php
-                    $segment9 = new Segment($aktualniHra->poradi[8], 'test');
+                    $segment9 = new Segment($aktualniHra->poradi[8], $aktualniHra->jemnoObrazku);
                     $segment9->Vypis();
                     ?></svg>
                     <span class="priklad"><?php $segment9->Vysledek($aktualniHra->jmenoHry);?></span><br>
                     <svg width="120" height="120" class="segment" id=""><?php
-                    $segment10 = new Segment($aktualniHra->poradi[9], 'test');
+                    $segment10 = new Segment($aktualniHra->poradi[9], $aktualniHra->jemnoObrazku);
                     $segment10->Vypis();
                     ?></svg>
                     <span class="priklad"><?php $segment10->Vysledek($aktualniHra->jmenoHry);?></span><br>
@@ -105,29 +105,29 @@
                 <div class="col-sm-4">        
                     <svg width="120" height="120" class="segment" id=""> 
                     <?php
-                    $segment11 = new Segment($aktualniHra->poradi[10], 'test');
+                    $segment11 = new Segment($aktualniHra->poradi[10], $aktualniHra->jemnoObrazku);
                     $segment11->Vypis();
                     ?></svg>
                     <span class="priklad"><?php $segment11->Vysledek($aktualniHra->jmenoHry);?></span><br>
                     <svg width="120" height="120" class="segment" id="">
                     <?php
-                    $segment12 = new Segment($aktualniHra->poradi[11], 'test');
+                    $segment12 = new Segment($aktualniHra->poradi[11], $aktualniHra->jemnoObrazku);
                     $segment12->Vypis();
                     ?>
                     </svg>
                     <span class="priklad"><?php $segment12->Vysledek($aktualniHra->jmenoHry);?></span><br>
                     <svg width="120" height="120" class="segment" id=""><?php
-                    $segment13 = new Segment($aktualniHra->poradi[12], 'test');
+                    $segment13 = new Segment($aktualniHra->poradi[12], $aktualniHra->jemnoObrazku);
                     $segment13->Vypis();
                     ?></svg>
                     <span class="priklad"><?php $segment13->Vysledek($aktualniHra->jmenoHry);?></span><br>
                     <svg width="120" height="120" class="segment" id=""><?php
-                    $segment14 = new Segment($aktualniHra->poradi[13], 'test');
+                    $segment14 = new Segment($aktualniHra->poradi[13], $aktualniHra->jemnoObrazku);
                     $segment14->Vypis();
                     ?></svg>
                     <span class="priklad"><?php $segment14->Vysledek($aktualniHra->jmenoHry);?></span><br>
                     <svg width="120" height="120" class="segment" id=""><?php
-                    $segment15 = new Segment($aktualniHra->poradi[14], 'test');
+                    $segment15 = new Segment($aktualniHra->poradi[14], $aktualniHra->jemnoObrazku);
                     $segment15->Vypis();
                     ?></svg>
                     <span class="priklad"><?php $segment15->Vysledek($aktualniHra->jmenoHry);?></span><br>

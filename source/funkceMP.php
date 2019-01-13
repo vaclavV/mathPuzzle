@@ -2,7 +2,7 @@
 
     class hra {    
    var $jmenoHry="testHry"; 
-   var $jemnoObrazku;
+   var $jemnoObrazku="test";
    var $poradi;
    var $cisloSegmentu=0;
 public function vyberHry(){
@@ -12,10 +12,14 @@ public function vyberHry(){
        
         $sql = "SELECT `jmenoHry`, `obrazek` FROM `hraTest` WHERE `aktivni`=1";
         $result = $conn->query($sql);
-    $this->jmenoHry = $result->fetch_array()[0];
-    $this->jemnoObrazku=$result->fetch_array()[1];
+    $row = $result->fetch_array();
+    $this->jmenoHry=$row[0];
+    $this->jemnoObrazku=$row[1];
 
           $conn->close(); 
+          
+          
+                
      }
   
 
