@@ -11,8 +11,12 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-$conn->close();    
-
+$conn->close();  
+?>
+<script>
+  location.replace("http://mathpuzzle.gevo.cz/adminTajny.php");
+window.alert("hra vytvořena");
+</script>
 
 
 

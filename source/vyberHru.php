@@ -35,6 +35,11 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 
 echo "je vybrána hra: <strong>" . $a . "</strong>";
-        
+?>         
+<script>
 
+  location.replace("http://mathpuzzle.gevo.cz/adminTajny.php");
+window.alert("hra vybrána");
+
+</script>
 

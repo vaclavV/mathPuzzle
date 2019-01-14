@@ -10,4 +10,8 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();   
-
+?>
+<script>
+  location.replace("http://mathpuzzle.gevo.cz/adminTajny.php");
+window.alert("obrázek uložen");
+</script>
